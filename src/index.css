@@ -1,0 +1,144 @@
+html {
+  background-color: #35d8d0;
+}
+
+body {
+  font-family: sans-serif;
+  background: url("./images/park.svg") no-repeat;
+  background-size: 100vw;
+  background-position: 0px 120px;
+}
+
+h2 {
+  font-family: "Lato";
+}
+
+h4 {
+  text-transform: capitalize;
+  color: rgb(20, 190, 207);
+}
+
+.card {
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.card-body small {
+  color: rgb(251, 105, 159);
+}
+
+.sightingForm {
+  background: #14becf;
+  color: white;
+  padding: 1rem;
+}
+
+.col-sm-6 {
+  margin-top: 1rem;
+}
+
+.card {
+  box-shadow: 0 2px rgba(128, 128, 128, 0.5);
+}
+
+.binoculars {
+  height: 100px;
+  background: url("./images/binoculars.svg") no-repeat;
+  background-position: 50%;
+  margin-bottom: 1rem;
+}
+
+.sightingAppear-enter {
+  opacity: 0.01;
+  /* transform: translateX(-100px); */
+}
+
+.sightingAppear-enter.sightingAppear-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+  /* transform: translateX(0); */
+}
+
+.toggleOrder {
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  background-color: #14becf;
+  color: white;
+}
+
+.duck {
+  margin: 2rem 1rem;
+  display: inline-block;
+}
+
+.serverError {
+  background: white;
+  color: #324954;
+  padding: 4rem 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+.spinner {
+  display: block;
+  animation: loading infinite 3s linear;
+  height: 150px;
+  margin: auto;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*  Custom stylesf for datepicker*/
+.react-datepicker-popper {
+  width: 315px;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item {
+  padding: 5px 10px;
+  left: -40px;
+  position: relative;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  border-radius: 0.3rem;
+  background-color: #14bed0 !important;
+  color: #fff;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected {
+  background-color: #14bed0 !important;
+  color: white;
+  font-weight: bold;
+}
+
+#sightingDate {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
